@@ -2,11 +2,11 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("name")
+@app.route("/name")
 def home():
     return "Hello, this is Ajay"
 
-@app.route("number")
+@app.route("/number")
 def health():
     return "7729033826"
 
